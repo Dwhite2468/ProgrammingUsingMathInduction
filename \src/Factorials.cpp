@@ -1,4 +1,5 @@
 #include<string>
+#include<iostream>
 
 using namespace std;
 
@@ -19,9 +20,10 @@ int factorial(int factToFind)
     return factToFind * factorial(factToFind - 1);
 }
 
-int main(int argc, string argv[])
+int main(int argc, char** argv)
 {
-    int factToFind = argv[1];
+    char* factToFindStr = argv[1];
+    int factToFind = atoi(factToFindStr);
     cout << factorial(factToFind) << endl;
     return 0;
 }
