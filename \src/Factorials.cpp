@@ -1,3 +1,11 @@
+////////////////////////////////////////////////////////////////////////////
+//  Dedicated to Sharanya and Siddharth Padithaya, whose father Haridas   //
+//  taught me so much about both programming and life.  Also dedicated    //
+//  to Mr. Torbert, who literally gave me everything I ever needed to     //
+//  use in life.  Last but definitely not least, Eleanor Diamond-Jones,   //
+//  Daniel Cohen, and Joshua Asare.                                       //
+////////////////////////////////////////////////////////////////////////////
+
 #include<string>
 #include<iostream>
 
