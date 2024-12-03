@@ -14,7 +14,7 @@ int factorial(int factToFind)
     /**
      * Inductive Assumption:  factorial(n - 1) is a decidable function.
      * Inductive Step: n! = n * factorial(n - 1) is an O(1) modification
-     * modification to factorial(n), therefore it is also decidable.
+     * to factorial(n), therefore it is also decidable.
      */
     return factToFind * factorial(factToFind - 1);
 }
@@ -22,7 +22,6 @@ int factorial(int factToFind)
 int main(int argc, string argv[])
 {
     int factToFind = argv[1];
-    cout << factorial(factToFind);
-    cout << endl;
+    cout << factorial(factToFind) << endl;
     return 0;
 }
