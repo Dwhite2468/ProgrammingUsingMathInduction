@@ -18,8 +18,32 @@ qsort(int arrLength,
   }
   int midPt = (start + end) / 2;
   /**
-   * In
+   * Inductive Hypothesis: There exists a program called
+   * qsort() that can sort a subsection of an array of
+   * size N.
    */
+  int pivot=numArray[midPt];
+  int i=end-1;
+  int j=start;
+      while(i>j)
+      {
+        if(numArray[i]<pivot && numArray[j]>pivot)
+        {
+            tmp=numArray[i];
+            numArray[i]=numArray[j];
+            numArray[j]=tmp;
+            i--;
+            j++;
+        }
+        else if(numArray[i]<pivot)
+        {
+            j++;
+        }
+        else if(numArray[j]>pivot)
+        {
+            i--;
+        }
+      }
   qsort(arrLength, start, midPt - 1, numArray);
   qsort(arrLength, midPt + 1, end, numArray);
 }
